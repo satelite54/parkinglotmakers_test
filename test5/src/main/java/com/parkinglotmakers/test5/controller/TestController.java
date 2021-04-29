@@ -49,14 +49,14 @@ public class TestController {
         Map<String, Object> mapGetParkInfo = map.get("GetParkInfo");
 
         List<Map<String, String>> listMapRow = (List<Map<String, String>>) mapGetParkInfo.get("row");
-        Integer IntListTotalCnt = (Integer) mapGetParkInfo.get("list_total_count");
+        Integer intListTotalCnt = (Integer) mapGetParkInfo.get("list_total_count");
         Map<String, String> mapRESULT = (Map<String, String>) mapGetParkInfo.get("RESULT");
         Set<String> rowkeySet = listMapRow.get(0).keySet();
 
 
         ModelAndView modelAndView = new ModelAndView("index");
         modelAndView.addObject("listMapRow", listMapRow);
-        modelAndView.addObject("IntListTotalCnt", IntListTotalCnt);
+        modelAndView.addObject("intListTotalCnt", intListTotalCnt);
         modelAndView.addObject("mapRESULT", mapRESULT);
         modelAndView.addObject("rowkeySet", rowkeySet);
         return modelAndView;

@@ -56,7 +56,7 @@
 <section class="page-section portfolio" id="portfolio">
     <div class="container">
         <!-- Portfolio Section Heading-->
-        <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Portfolio</h2>
+<%--        <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Portfolio</h2>--%>
         <!-- Portfolio Grid Items-->
         <div class="row justify-content-center">
             <table class="table">
@@ -79,6 +79,12 @@
                     </c:forEach>
                 </tbody>
             </table>
+            <button class="btn-dark" onclick="getParkingAPI()" style="font-size: larger">주차장 데이터 호출</button>
+            <script>
+                function getParkingAPI() {
+                    location.href = "/getParkingAPI";
+                }
+            </script>
         </div>
     </div>
 </section>
@@ -88,29 +94,29 @@
         <div class="row">
             <!-- Footer Location-->
             <div class="col-lg-4 mb-5 mb-lg-0">
-                <h4 class="text-uppercase mb-4">Location</h4>
+                <%--<h4 class="text-uppercase mb-4">Location</h4>
                 <p class="lead mb-0">
                     2215 John Daniel Drive
                     <br />
                     Clark, MO 65243
-                </p>
+                </p>--%>
             </div>
             <!-- Footer Social Icons-->
             <div class="col-lg-4 mb-5 mb-lg-0">
-                <h4 class="text-uppercase mb-4">Around the Web</h4>
+                <%--<h4 class="text-uppercase mb-4">Around the Web</h4>
                 <a class="btn btn-outline-light btn-social mx-1" href="#!"><i class="fab fa-fw fa-facebook-f"></i></a>
                 <a class="btn btn-outline-light btn-social mx-1" href="#!"><i class="fab fa-fw fa-twitter"></i></a>
                 <a class="btn btn-outline-light btn-social mx-1" href="#!"><i class="fab fa-fw fa-linkedin-in"></i></a>
-                <a class="btn btn-outline-light btn-social mx-1" href="#!"><i class="fab fa-fw fa-dribbble"></i></a>
+                <a class="btn btn-outline-light btn-social mx-1" href="#!"><i class="fab fa-fw fa-dribbble"></i></a>--%>
             </div>
             <!-- Footer About Text-->
             <div class="col-lg-4">
-                <h4 class="text-uppercase mb-4">About Freelancer</h4>
+                <%--<h4 class="text-uppercase mb-4">About Freelancer</h4>
                 <p class="lead mb-0">
                     Freelance is a free to use, MIT licensed Bootstrap theme created by
                     <a href="http://startbootstrap.com">Start Bootstrap</a>
                     .
-                </p>
+                </p>--%>
             </div>
         </div>
     </div>
@@ -119,7 +125,7 @@
 <div class="copyright py-4 text-center text-white">
     <div class="container">
         <small>
-            Copyright &copy; Your Website
+            Copyright &copy; Parkinglotmakers
             <!-- This script automatically adds the current year to your website footer-->
             <!-- (credit: https://updateyourfooter.com/)-->
             <script>
